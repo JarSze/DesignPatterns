@@ -17,6 +17,8 @@ public class AppTest
         //read from file
         reservationBuilder.data( LocalDate.parse( "2018-03-03" ) );
 
+        System.out.println(LocalDate.parse( "2018-03-03" ));
+
         //end build process - recive object
         Reservation build =reservationBuilder.build();
         System.out.println(build);
