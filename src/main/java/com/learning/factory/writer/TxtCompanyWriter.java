@@ -13,11 +13,11 @@ import java.util.stream.Collectors;
 /**
  * Created by jszeligowski on 2018-03-03.
  */
-public class TxtCompaneWriter implements CompanyWriter
+public class TxtCompanyWriter implements CompanyWriter
 {
     private final String path;
 
-    public TxtCompaneWriter( String path )
+    public TxtCompanyWriter( String path )
     {
         this.path = path;
     }

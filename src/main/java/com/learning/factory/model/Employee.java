@@ -1,12 +1,32 @@
 package com.learning.factory.model;
 
+import java.io.Serializable;
+
 /**
  * Created by jszeligowski on 2018-03-03.
  */
-public class Employee
+public class Employee implements Serializable
 {
     private String firstname, lastname, email;
     private double salary;
+
+    public Employee( String firstname, String lastname, String email, double salary )
+    {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+        this.salary = salary;
+    }
+
+    @Override public String toString()
+    {
+        return "Employee{" +
+            "firstname='" + firstname + '\'' +
+            ", lastname='" + lastname + '\'' +
+            ", email='" + email + '\'' +
+            ", salary=" + salary +
+            '}';
+    }
 
     public Employee()
     {
