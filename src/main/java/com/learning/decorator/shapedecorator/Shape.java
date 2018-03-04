@@ -5,4 +5,5 @@ package com.learning.decorator.shapedecorator;
  */
 public interface Shape
 {
+    String info();
 }
