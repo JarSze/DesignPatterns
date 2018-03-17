@@ -3,8 +3,10 @@ package com.learning.observer;
 /**
  * Created by jszeligowski on 2018-03-04.
  */
+
 public class Stock extends Observable<Stock>
 {
+    private String name;
     private double price;
 
     public double getPrice()
@@ -31,5 +33,15 @@ public class Stock extends Observable<Stock>
         {
             propertyChanged( new PropertyChangeIventArgs<>( this, "price", this.price, oldPrice ) );
         }
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName( String name )
+    {
+        this.name = name;
     }
 }
